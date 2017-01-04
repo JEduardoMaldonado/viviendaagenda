@@ -4,18 +4,14 @@ from web import form
 db = web.database(dbn='mysql', host='ehc1u4pmphj917qf.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',db='aw10o7i0uoowomzw', user='bt9w0v9g0v8uz4x3', pw='ct31cqvwybrmkqku')
 render=web.template.render('templates')
 urls = (
-    '/', 'login'
-    ,'/index','index',
+   '/','index',
     '/nuevo', 'nuevo',
     '/editar/(.+)','editar',
     '/ver/(.+)','ver',
     '/eliminar/(.+)','eliminar'
 )
 
-myformLogin = form.Form( 
-    form.Textbox("usuario"), 
-    form.Password("contrasena")
-    )
+
 
 myformAgenda=form.Form(
     form.Textbox('Nombre'), 
@@ -24,32 +20,6 @@ myformAgenda=form.Form(
     form.Textbox('Correo')
    
 )
-class login:
-    def GET(self):
-        form = myformLogin()
-        
-        return render.login(form)
-    
-    def POST(self): 
-        form = myformLogin()
-        if not form.validates(): 
-            return render.login(form)
-        else: 
-            result=db.select("login")
-            dbuser=""
-            dbPass=""
-            for row in result:
-                dbuser=row.usuario
-                dbPass=row.contrasena
-
-            if dbuser==form.d.usuario and dbPass==form.d.contrasena:
-                raise web.seeother("/index")
-            else:
-               return render.error(form)
-
-            # form.d.boe and form['boe'].value are equivalent ways of
-            # extracting the validated arguments from the form.
-
 class index:
     def GET(self):
         
@@ -72,7 +42,7 @@ class nuevo:
             telefono=formNew.d.Telefono,
              correo=formNew.d.Correo)
             result=db.select('datosagenda')
-            raise web.seeother('/index')
+            raise web.seeother('/')
             
 
 class editar:
@@ -97,7 +67,7 @@ class editar:
              apellido=formEdit.d.Apellido, telefono=formEdit.d.Telefono,
               correo=formEdit.d.Correo)
             result=db.select('datosagenda')
-            raise web.seeother('/index')
+            raise web.seeother('/')
 class eliminar:
     def GET(self,id):
         formEdit=myformAgenda()
@@ -116,7 +86,7 @@ class eliminar:
             return render.eliminar(formEdit)
         else:
             db.delete('datosagenda', where="id=%s"%(id))
-            raise web.seeother('/index')
+            raise web.seeother('/')
 class ver:
     def GET(self,id):
         
