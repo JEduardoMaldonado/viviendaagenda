@@ -1,7 +1,7 @@
 import web
 # @
 from web import form
-db = web.database(dbn='mysql', host='ehc1u4pmphj917qf.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',db='aw10o7i0uoowomzw', user='bt9w0v9g0v8uz4x3', pw='ct31cqvwybrmkqku ',port="3360")
+db = web.database(dbn='mysql', host='ehc1u4pmphj917qf.cbetxkdyhwsb.us-east-1.rds.amazonaws.com',db='aw10o7i0uoowomzw', user='bt9w0v9g0v8uz4x3', pw='ct31cqvwybrmkqku')
 render=web.template.render('templates')
 urls = (
     '/', 'login'
