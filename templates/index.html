@@ -35,11 +35,7 @@ $def with (result)
     </th>
     $for row in result:
     <tr>
-        <td class="tr1">$row.nombre</td>
-        <td class="tr1">$row.apellido</td>
-        <td class="tr1" >$row.telefono</td>
-        <td class="tr1" >$row.correo</td>
-          <td><a href="/ver/$row.id"> <input type="submit" value="Ver" /></a>  </td><td> <a href="/editar/$row.id"> <input type="submit" value="Editar" /></a>  </td> <td><a href="/eliminar/$row.id"><input type="submit" value="Eliminar" /></a> </td>
+   <td><a href="/ver/$row.id"> <input type="submit" value="Ver" /></a>  </td><td> <a href="/editar/$row.id"> <input type="submit" value="Editar" /></a>  </td> <td><a href="/eliminar/$row.id"><input type="submit" value="Eliminar" /></a> </td>
     </tr>
 </table>
 <form name="main" method="post">   
