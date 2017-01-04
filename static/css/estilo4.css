@@ -1,0 +1,119 @@
+
+.body{
+background-image: url(Images/fondo.png);
+background-size: 100vw 100vh;
+background-attachment: fixed;
+margin:0;
+font-family: monospace;
+color: white;
+}
+#h1{
+    font-size: 80px;
+    font-style: bold;
+    color: white;
+}
+.form{
+    
+    width: 250 px;
+    margin: auto;
+    background: rgba(0,0,0,0.8);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 50%;
+    border-radius: 7px;
+    font-size: 200%;
+}
+.formDelete{
+    
+    width: 250 px;
+    margin: auto;
+    background: rgba(0,0,0,0.8);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-left: 50%;
+    margin-right: 5%;
+    border-radius: 7px;
+    font-size: 200%;
+}
+
+h2{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+input [type=Textbox]{
+    font-size:130%;
+}
+input [type=TextArea]{
+    font-size:130%;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border: none;
+} 
+label {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 20px;
+    border: none;
+    align-content: right;
+} 
+#size {
+    font-size: 200%;
+    
+} 
+
+
+
+#boton{
+    color: #fff;
+    padding: 20px;
+    background: #31384A;
+    box-sizing: border-box;
+    border-radius: 7px;
+    text-align: center;
+    
+}
+#boton:hover{
+    cursor: pointer;
+}
+
+@media (max-width0){
+    form{
+        width: 100%;
+    }
+}
+
+
+
+#boton{
+    color: #fff;
+    padding: 20px;
+    background: #31384A;
+    box-sizing: border-box;
+    border-radius: 7px;
+    text-align: center;
+    
+}
+#boton:hover{
+    cursor: pointer;
+}
+
+@media (max-width0){
+    form{
+        width: 100%;
+    }
+}

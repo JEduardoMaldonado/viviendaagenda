@@ -1,0 +1,23 @@
+$def with (form)
+<html>
+    <head>
+        <title> Editar </title>
+         <link href="../static/css/estilo4.css" media="screen" rel="StyleSheet" type="text/css">
+    </head>
+    <body class="body">
+<center>
+<h1 id="h1">Editar </h1>
+</center>
+<form action="" method="post">
+    <center>
+    <table CELLSPACING="10" WIDTH="400"> 
+        <tr>
+$:form.render()
+        </tr>
+    </table>
+    </center>
+<input  id="boton" type="submit" value="Modificar" />
+</form>
+</font>
+    </body>
+</html>

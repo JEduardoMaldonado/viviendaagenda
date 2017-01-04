@@ -1,0 +1,56 @@
+$def with (result)
+<html>
+    <head>
+        <LINK REL=StyleSheet HREF="static/css/estilo2.css" media="screen" TYPE="text/css" >
+       <link rel="login" type="image/png" href="login.png" />
+        
+        <title> Agenda </title>
+    </head>
+    <body>
+        <h1 class="tr1">
+            Agenda </h1>
+
+    
+   
+    
+      <table class="tabla">
+    <th class="tr1">
+       Nombre
+    </th>
+    <th class="tr1">
+       Apellido
+    </th>
+    <th class="tr1">
+        Telefono
+    </th>
+    
+    <th class="tr1">
+        Ver 
+    </th>
+    <th class="tr1">
+        Editar 
+    </th>
+     <th class="tr1">
+        Eliminar 
+    </th>
+    $for row in result:
+    <tr>
+        <td class="tr1">$row.nombre</td>
+        <td class="tr1">$row.apellido</td>
+        <td class="tr1" >$row.telefono</td>
+        <td class="tr1" >$row.correo</td>
+          <td><a href="/ver/$row.id"> <input type="submit" value="Ver" /></a>  </td><td> <a href="/editar/$row.id"> <input type="submit" value="Editar" /></a>  </td> <td><a href="/eliminar/$row.id"><input type="submit" value="Eliminar" /></a> </td>
+    </tr>
+</table>
+<form name="main" method="post">   
+        
+<input  type="submit" value="Nuevo" id="boton" />  
+</form>
+
+
+ </body>
+      
+    
+</html>
+
+

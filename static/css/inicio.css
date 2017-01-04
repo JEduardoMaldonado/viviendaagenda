@@ -1,0 +1,137 @@
+.box {
+content:0px;
+margin: 0px;
+padding:0px;
+background-color:#000000;
+border:0px solid #000000;
+
+}
+
+body {
+ background: #FFFFFF ;
+	font-size: 90%;
+}
+.degradadoo {
+font-size: 120%;
+font-weight: bold ;
+color:#000000;
+display:compact;
+width: 140px;
+  height: 26px;
+ 
+}
+input[type=search] {
+    -webkit-border-radius: 5px;
+border-radius: 5px;
+    -moz-appearance: none;
+    -o-appearance: none;
+    height: 35px;
+    width: 230px;
+    color:#000000;
+	font: oblique bold 80% cursive;
+
+}
+input[type=email] {
+    -webkit-border-radius: 5px;
+border-radius: 5px;
+    -moz-appearance: none;
+    -o-appearance: none;
+      height: 35px;
+    width: 230px;
+    color:#000000;
+  font: oblique bold 80% cursive;
+
+}
+
+input[type=submit] {
+    -webkit-border-radius: 5px;
+border-radius: 5px;
+    -moz-appearance: none;
+    -o-appearance: none;
+      height: 35px;
+    width: 230px;
+    color:#FFFFFF;
+    background:#0066FF; 
+	font: oblique bold 80% cursive;
+	
+
+}
+#inpu[type=submit] {
+    -webkit-border-radius: 5px;
+border-radius: 5px;
+    -moz-appearance: none;
+    -o-appearance: none;
+     height: 35px;
+    width: 230px;
+    color:#000000;
+    background:#D0D0D0; 
+  font: oblique bold 80% cursive;
+  
+
+}
+#inp[type=submit] {
+    -webkit-border-radius: 5px;
+border-radius: 5px;
+    -moz-appearance: none;
+    -o-appearance: none;
+    height: 30px;
+    width: 100px;
+    color:#000000;
+    background:#D0D0D0; 
+  font: oblique bold 80% cursive;
+  border-radius: 170px 170 170px 170px;
+-moz-border-radius: 170px 170px 170px 170px;
+-webkit-border-radius: 170px 170px 170px 170px;
+  
+
+}
+input[type=password] {
+   -webkit-border-radius: 5px;
+border-radius: 5px;
+    -moz-appearance: none;
+    -o-appearance: none;
+   height: 35px;
+    width: 230px;
+    color:#000000;
+	font: oblique bold 80% cursive;
+	}
+.select{
+    -webkit-border-radius: 5px;
+border-radius: 5px;
+    -moz-appearance: none;
+    -o-appearance: none;
+     height: 35px;
+    width: 230px;
+    color:#000000;
+	font: oblique bold 80% cursive
+
+}
+#titulo1{
+	font-size: 200%;
+}
+#tablaRegis tr:nth-child(odd) {
+   background-color: #999;
+   color:
+ }
+
+#tablaRegis  tr:nth-child(even) {
+   background-color: #CCC;
+   color:#000;
+}
+.input4[type=radio] {
+   background: url(../imagenes/botones/cali.png) no-repeat top;
+}
+.eli{
+display:compact;
+ width: 70px;
+  height: 30px;
+ background: url(../imagenes/botones/eli.png) no-repeat top;
+}
+.input4[type=text] {
+    height: 15px;
+    width: 75px;
+    color:
+background:0;
+    font: oblique bold 70% cursive ;
+  border:#999;
+}

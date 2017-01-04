@@ -1,0 +1,120 @@
+body{
+     
+    background: #A9F5F2;
+}
+/*#div1 {
+     overflow:scroll;
+     height:500px;
+     width:520px;
+}*/
+#div1 table {
+    width:500px;
+      
+   
+}
+.txtBlanco{
+    
+    text-align: center;
+    margin-top: 0%;
+    color: #FFFFFF;
+    border: 0px solid #FFFFFF;
+    font-size: 20px;
+    font-style: initial;
+    margin-left: 0%;
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: monospace;
+    
+    
+    
+}
+.boton{
+    background: #FFFFFF;
+    text-align: center;
+    margin-top: 0%;
+    color: black;
+    border: 1px solid #000;
+    font-size: 20px;
+    font-style: initial;
+    margin-left: 0%;
+    
+}
+
+
+    
+
+
+form{
+    width: 50 px;
+    margin: auto;
+   background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 120px;
+    margin-left: 32%;
+    margin-right: 32%;
+    border-radius: 7px;
+    font-size: 150%;
+    align-content: center;
+
+    
+}
+
+h2{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+    margin-bottom: 20px;
+
+}
+input [type=submit]{
+    width: 20%;
+    margin-bottom: 30px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 30px;
+    border: none;
+     background: #FFFFFF;
+}
+
+input {
+    width: 80%;
+    margin-bottom: 25px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 30px;
+    border: none;
+     background: #FFFFFF;
+   
+} 
+.btnInicio {
+    width: 30%;
+    margin-bottom: 30px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 30px;
+    border: none;
+     background: #FFFFFF;
+     align-content: right;
+     background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+    font-family: monospace;
+    
+   
+} 
+
+#boton{
+    color: #fff;
+    padding: 20px;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 7px;
+    text-align: center;
+    
+}
+#boton:hover{
+    cursor: pointer;
+}

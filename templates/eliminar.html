@@ -1,0 +1,25 @@
+$def with (form)
+<html>
+    <head>
+        <title>Eliminar</title>
+        <link href="../static/css/estilo5.css" media="screen" rel="StyleSheet" type="text/css">
+    </head>
+
+    <body class="body">
+        
+
+<form class="formDelete">
+    <br><h3 id="h2">Desea Eliminar Este Dato </h3></br>
+</form>
+<form action="" method="post">
+    
+        <tr>
+            <td>
+$:form.render()
+            </td>
+    <tr>
+<input  id="boton" type="submit" value="Eliminar" />
+
+</form>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+
+body{
+background-image: url(Images/fondo.png);
+background-size: 100vw 100vh;
+background-attachment: fixed;
+margin:0;
+font-family: monospace;
+color: white;
+}
+
+form{
+    width: 250 px;
+    margin: auto;
+    background: rgba(0,0,0,0.4);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 100px;
+    margin-left: 60%;
+    margin-right: 5%;
+    border-radius: 7px;
+    font-size: 300%;
+}
+
+h2{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 50px;
+    margin-bottom: 30px;
+
+}
+input [type=Textbox]{
+    font-size:130%;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 25px;
+    border: none;
+} 
+#size {
+    font-size: 200%;
+    
+} 
+
+
+
+#boton{
+    color: #fff;
+    padding: 20px;
+    background: #31384A;
+    box-sizing: border-box;
+    border-radius: 7px;
+    text-align: center;
+    
+}
+#boton:hover{
+    cursor: pointer;
+}
+
+@media (max-width0){
+    form{
+        width: 100%;
+    }
+}

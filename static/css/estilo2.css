@@ -1,0 +1,107 @@
+body{
+background-image: url(Images/fondo.png);
+background-size: 100vw 100vh;
+background-attachment: fixed;
+margin:0;
+font-family: monospace;
+color: white;
+}
+.tr{
+    color: black;
+    padding: 20px;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 25px;
+    
+}
+.tr2{
+    color: black;
+    padding: 20px;
+    border-radius: 7px;
+    text-align: center;
+    font-style: oblique;
+    font-size: 25px;
+}
+.tr1{
+    color: white;
+    padding: 20px;
+    border-radius: 7px;
+    text-align: center;
+    font-size: 25px;
+}
+form{
+    width: 250 px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 7px;
+    font-size: 200%;
+}
+.tabla{
+    
+    width: 200 px;
+    margin: auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-left: 30%;
+    margin-right: 200%;
+    border-radius: 7px;
+    font-size: 150%;
+}
+
+h2{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+input [type=Textbox]{
+    font-size:130%;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 25px;
+    border: none;
+} 
+#size {
+    font-size: 200%;
+    
+} 
+#botonVer{
+    color: #fff;
+    padding: 20px;
+    background: rgba(223,32,114,0.8);
+    box-sizing: border-box;
+    border-radius: 7px;
+    text-align: center;
+    
+}
+
+
+#boton{
+    color: #fff;
+    padding: 10px;
+    background: #31384A;
+    box-sizing: border-box;
+    border-radius: 7px;
+    text-align: center;
+    
+}
+#boton:hover{
+    cursor: pointer;
+}
+
+@media (max-width0){
+    form{
+        width: 100%;
+    }
+}
