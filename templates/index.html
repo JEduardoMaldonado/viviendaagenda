@@ -4,26 +4,43 @@ $def with (result)
         <LINK REL=StyleSheet HREF="static/css/estilo2.css" media="screen" TYPE="text/css" >
        <link rel="login" type="image/png" href="login.png" />
         
-        <title> Agenda </title>
+        <title> Borregos </title>
     </head>
     <body>
         <h1 class="tr1">
-            Agenda </h1>
+            Borregos </h1>
 
     
    
     
       <table class="tabla">
     <th class="tr1">
-       Nombre
+      # BORREGO
     </th>
     <th class="tr1">
-       Apellido
+      # RAZA
     </th>
+
     <th class="tr1">
-        Telefono
+       # GENETICA
     </th>
-    
+
+    <th class="tr1">
+    GENERO
+    </th>
+
+    <th class="tr1">
+    EDAD
+   </th>
+
+   <th class="tr1">
+   FECHA NACIMIENTO
+   </th>
+
+   <th class="tr1">
+   PRECIO
+   </th>
+
     <th class="tr1">
         Ver 
     </th>
@@ -35,7 +52,15 @@ $def with (result)
     </th>
     $for row in result:
     <tr>
-   <td><a href="/ver/$row.id"> <input type="submit" value="Ver" /></a>  </td><td> <a href="/editar/$row.id"> <input type="submit" value="Editar" /></a>  </td> <td><a href="/eliminar/$row.id"><input type="submit" value="Eliminar" /></a> </td>
+        <td class="tr1">$row.id_borrego</td>
+        <td class="tr1">$row.id_raza</td>
+        <td class="tr1" >$row.id_genetica</td>
+        <td class="tr1" >$row.genero</td>
+        <td class="tr1">$row.edad</td>
+        <td class="tr1">$row.fecha_nacimiento</td>
+        <td class="tr1">$row.precio</td>
+        
+          <td><a href="/ver/$row.id"> <input type="submit" value="Ver" /></a>  </td><td> <a href="/editar/$row.id"> <input type="submit" value="Editar" /></a>  </td> <td><a href="/eliminar/$row.id"><input type="submit" value="Eliminar" /></a> </td>
     </tr>
 </table>
 <form name="main" method="post">   
