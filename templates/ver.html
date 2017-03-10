@@ -12,7 +12,7 @@ $def with (result)
         $for row in result:
         
         <center>
-            <h1 style="bold" aria-setsize="15px"><font size="15px" color= "white">$row.nombre</font></h1>
+            <h1 style="bold" aria-setsize="15px"><font size="15px" color= "white">$row.id_borrego</font></h1>
         </center>
         
               <center>
@@ -24,21 +24,41 @@ $def with (result)
             <table CELLSPACING="10" WIDTH="400"  >
                 <TH COLSPAN=2 BGCOLOR="#6D8FFF" > Agenda </TH>
                 <tr>
-                    <td > Nombre  </td>
-                <td>$row.nombre</td>
+                    <td > # Borrego  </td>
+                <td>$row.id_borrego</td>
                 </tr>
                 <tr>
-                    <td>Apellido</td>
-                <td>$row.apellido</td>
+                    <td># Raza</td>
+                <td>$row.id_raza</td>
                 </tr>
                 <tr>
-                    <td>Telefono</td>
-                <td>$row.telefono</td>
+                    <td># Genetica</td>
+                <td>$row.id_genetica</td>
                 </tr>
+
                 <tr>
-                    <td>Correo</font> </td>
-                <td>$row.correo</font></td>
+                    <td>Genero</font> </td>
+                <td>$row.genero</font></td>
                 </tr>
+
+                <tr>
+                    
+                    <td> Edad <font> </td>
+                    <td>$row.edad</font></td>
+                        
+                </tr>
+
+                <tr>
+                <td> Fecha Nacimiento <font> </td>
+                <td>$row.fecha_nacimiento</font></td>
+                </tr>
+
+                <tr>
+                <td> Precio <font></td>
+                <td>$row.precio</font></td>
+                </tr>
+
+
                 
                 
             </table>
