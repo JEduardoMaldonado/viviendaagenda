@@ -58,7 +58,7 @@ class editar:
         formEdit=myformBorrego()
         
         
-        result=db.select('Borrego', where= "id=%s"%(id))
+        result=db.select('Borrego', where= "id_borrego=%s"%(id_borrego))
         
         for row in result:
             formEdit['genero'].value=row.genero
@@ -71,7 +71,7 @@ class editar:
         if not formEdit.validates(): 
             return render.editar(formEdit)
         else:
-            db.update('Borrego', where='id=%s'%(id), genero=formEdit.d.genero,
+            db.update('Borrego', where='id_borrego=%s'%(id_borrego), genero=formEdit.d.genero,
              edad=formEdit.d.edad, fecha_nacimiento=formEdit.d.fecha_nacimiento,
               precio=formEdit.d.precio)
             result=db.select('Borrego')
@@ -80,7 +80,7 @@ class eliminar:
     def GET(self,id):
         formEdit=myformBorrego()
         
-        result=db.select('Borrego', where='id=%s'%(id))
+        result=db.select('Borrego', where='id_borrego=%s'%(id_borrego))
         for row in result:
             formEdit['genero'].value=row.genero
             formEdit['edad'].value=row.edad
@@ -93,12 +93,12 @@ class eliminar:
         if not formEdit.validates(): 
             return render.eliminar(formEdit)
         else:
-            db.delete('Borrego', where="id=%s"%(id))
+            db.delete('Borrego', where="id_borrego=%s"%(id_borrego))
             raise web.seeother('/index')
 class ver:
     def GET(self,id):
         
-        result=db.select('Borrego', where="id=%s"%(id))
+        result=db.select('Borrego', where="id_borrego=%s"%(id_borrego))
         return render.ver(result)
 
 if __name__ == "__main__":
